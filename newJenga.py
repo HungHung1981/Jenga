@@ -26,10 +26,13 @@
 
 import os
 import csv
+import sys
 from datetime import datetime
 from generateTower import *
 from collections import deque
 import pygame # music
+
+APP_DIR = os.path.dirname(os.path.abspath(sys.executable if getattr(sys, "frozen", False) else __file__))
 
 class JengaGame:
     def __init__(self, tower_height):
@@ -326,7 +329,7 @@ def game_loop():
     game.print_tower()
 
     # Music
-    mp3_file_path = "Undertale - Bonetrousle.mp3"
+    mp3_file_path = os.path.join(APP_DIR, "Undertale - Bonetrousle.mp3")
     try:
         pygame.init()
         pygame.mixer.init()   
@@ -383,7 +386,7 @@ def game_loop():
 
     data = [name, game.num_moves, date]
     
-    file_name = "scores.txt"
+    file_name = os.path.join(APP_DIR, "scores.txt")
     
     # Write to file where scores will be stored
     if not os.path.isfile(file_name):
