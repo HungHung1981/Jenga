@@ -152,7 +152,7 @@ public class Jenga {
 	}
 
 	private static boolean isStable(List<GameLayer> tower) {
-		for (int supportLayer = 1; supportLayer < tower.size() - 1; supportLayer++) {
+		for (int supportLayer = 0; supportLayer < tower.size() - 1; supportLayer++) {
 			GameLayer support = tower.get(supportLayer);
 			int minimumColumn = 3;
 			int maximumColumn = -1;
