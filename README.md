@@ -1,6 +1,7 @@
 # Jenga
 
-A console Jenga game written in Java. Play with two or more people, or add computer players. The tower is drawn in the console using ASCII art.
+A simple console Jenga game written in Java. Play with two or more people, or add computer players. The tower is drawn in the console using ASCII art. The additional code was written by Visual Studio Code and its Copilot. They are very cool.
+Thanks to JC and them.
 
 ## Build on Windows
 
@@ -24,3 +25,13 @@ java Jenga
 Enter the total number of players and then how many should be computer players. At least one human player is required. On a turn, enter a layer and column to remove a block. The top two layers are protected. After each move, the game checks whether the center of mass above each layer is still within that layer's remaining support; if not, the tower falls and the next player wins. If no legal move remains, the player whose turn it is loses.
 
 The other Java classes retain the project's original tower and robot-movement code; the console game does not require robot hardware.
+
+### How to play ###
+
+Unix/Linux:
+
+Just run it with ./Jenga.exe
+
+Windows:
+
+You can use the Jenga.exe. Or you can put a link of "Jenga" e. g. on your desktop and open it with a double click.
