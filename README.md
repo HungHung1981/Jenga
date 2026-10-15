@@ -1,6 +1,6 @@
 # Jenga
 
-A simple console Jenga game written in Java. Play with two or more people, or add computer players. The tower is drawn in the console using ASCII art. The additional code was written by Visual Studio Code and its Copilot. They are very cool.
+A simple console Jenga game written in Java with code by Thomas Meijers, Jonas van Oenen, Nina läuger, Alessandra van Ree. Play with two or more people, or add computer players. The tower is drawn in the console using ASCII art. The additional code was written by Visual Studio Code and its Copilot. They are very cool.
 Thanks to JC and them.
 
 ## Build on Windows
