@@ -11,7 +11,9 @@ Install a Windows JDK that includes `javac`, `jar`, and `jpackage` (JDK 17 or ne
 build.bat
 ```
 
-The build creates `dist\Jenga\Jenga.exe`, a console application image with its own Java runtime. Share the complete `dist\Jenga` folder; the executable needs the adjacent runtime files and is not a standalone single-file executable.
+The build creates `dist\Jenga\Jenga.exe`, a console application image with its own Java runtime, and `dist\Jenga-Windows.zip`, a portable archive of the complete application folder. Share the ZIP (or the complete `dist\Jenga` folder) and have the recipient extract it before launching `Jenga.exe`. The recipient does not need Java installed.
+
+Do not copy or share `Jenga.exe` by itself: it relies on the adjacent `app` and `runtime` folders. The JVM is bundled with the application, but the launcher is not a standalone single-file executable.
 
 ## Run from source
 

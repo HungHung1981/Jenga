@@ -37,7 +37,12 @@ echo Packaging Jenga.exe with its Java runtime...
 jpackage --type app-image --name Jenga --input "build\package" --main-jar Jenga.jar --main-class Jenga --dest "dist" --win-console
 if errorlevel 1 exit /b 1
 
+echo Creating a portable distribution archive...
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Compress-Archive -Path 'dist\Jenga' -DestinationPath 'dist\Jenga-Windows.zip' -Force"
+if errorlevel 1 exit /b 1
+
 echo.
 echo Build complete: dist\Jenga\Jenga.exe
-echo Share the complete dist\Jenga folder so the bundled runtime is included.
+echo Portable distribution: dist\Jenga-Windows.zip
+echo Share the ZIP or the complete dist\Jenga folder; do not share Jenga.exe by itself.
 exit /b 0
