@@ -30,10 +30,12 @@ The other Java classes retain the project's original tower and robot-movement co
 
 ### How to play ###
 
+Please unzip the Jenga-Windows.zip where you want.
+
 Unix/Linux:
 
 Just run it with ./Jenga.exe
 
 Windows:
 
-You can use the Jenga.exe. Or you can put a link of "Jenga" e. g. on your desktop and open it with a double click.
+You can use the Jenga.exe
